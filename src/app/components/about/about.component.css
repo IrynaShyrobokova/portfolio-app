@@ -1,0 +1,93 @@
+/* Remove unwanted margins/padding from the body */
+body, html {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* Ensure full width for sections */
+.container-fluid {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Row to remove any Bootstrap gutter */
+.info-about-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure both sections stay on the same line */
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both sections are the same height */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Left (Basic Information) takes 35% of the width */
+.info-section {
+  flex-basis: 35%; /* Set to 35% of the parent width */
+  margin-right: 20px; /* Add some margin between left and right */
+  background-color: #1A5276; /* Dark blue background */
+  padding: 20px;
+  border-radius: 10px;
+  color: white; /* White text for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.info-box a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+  .info-box a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+
+.info-box p {
+  color: white;
+  margin: 5px 0;
+}
+
+/* Right (About) takes 65% of the width */
+.about-section {
+  flex-basis: 65%; /* Set to 65% of the parent width */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ECF0F1; /* Light blue-gray background */
+  color: #2C3E50; /* Dark navy text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Remove extra margin from paragraphs if needed */
+p {
+  margin: 0;
+  color: #2C3E50; /* Ensure text is dark navy */
+}
+
+/* Download CV Button */
+.btn-cv {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-cv:hover {
+    background-color: #0056b3;
+  }
+
+.col-35 {
+  width: 35%;
+  font-weight: bold;
+}
+
+.col-65 {
+  width: 65%;
+}

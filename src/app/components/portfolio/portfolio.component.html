@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Collage with Full Descriptions</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Portfolio Section Styles */
+    #portfolio {
+      padding: 20px 0; /* Added padding for spacing at the top */
+      margin: 0;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #333;
+    }
+
+    /* Ensures the images take half the width and fill the screen dynamically */
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      width: calc(50vw - 10px); /* Adjusted width to add space between images */
+      height: calc(50vh - 10px); /* Adjusted height to maintain aspect ratio with spaces */
+      margin: 5px; /* Small margin between items */
+    }
+
+    /* Image Styling */
+    .portfolio-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    /* Description Styling */
+    .portfolio-description {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8); /* Darker overlay for better readability */
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 20px;
+    }
+
+    /* Hover Effects */
+    .portfolio-item:hover img {
+      transform: scale(1.1); /* Zoom in on hover */
+    }
+
+    .portfolio-item:hover .portfolio-description {
+      opacity: 1; /* Show description on hover */
+    }
+
+    /* Description Text Styling */
+    .portfolio-description h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-description p {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .portfolio-description .date {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    /* Grid layout for making two items per row */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Aligns items centrally */
+    }
+
+    /* Ensure there's no horizontal overflow due to margins */
+    .container-fluid {
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- First Row with 2 Images -->
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="assets/automating-catering.jpg" alt="Automating Catering Project">
+            <div class="portfolio-description">
+              <h4>Automating Catering Processes / ERP "IT-Enterprise"</h4>
+              <p>This project automated operations for calculating product costs, warehouse operations, menu creation, inventory, and reporting. It saved on staffing costs and helped manage menus efficiently. My role was project manager, team lead, process ideologist, tester, and developer.</p>
+              <p class="date">Jan 2017 - Dec 2018 | Associated with FERREXPO PLC</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="assets/fuel-excise-tax.jpg" alt="Fuel Excise Tax Project">
+            <div class="portfolio-description">
+              <h4>Fuel Excise Tax / ERP "IT-Enterprise"</h4>
+              <p>Led a project due to changes in legislation related to fuel excise tax. The system accounted for fuel purchases and consumption daily. I led integration of the fuel station system with the ERP system, ensuring real-time data transmission and successful completion under tight deadlines.</p>
+              <p class="date">Jun 2019 - Aug 2019 | Associated with FERREXPO PLC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Second Row with 2 Images -->
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="assets/warehouse-management.jpeg" alt="Warehouse Management Project">
+            <div class="portfolio-description">
+              <h4>Warehouse Management Processes / ERP "IFS Applications"</h4>
+              <p>This project involved implementing a unified information system for warehouse logistics management. It boosted operational speed and reduced errors, with productivity increasing 2.7 times and warehouse capacity expanding by 2.14 times. The project was in its final stages when I left.</p>
+              <p class="date">Dec 2020 - Aug 2022 | Associated with FERREXPO PLC</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="assets/maintenance.jpg" alt="Maintenance Project">
+            <div class="portfolio-description">
+              <h4>Maintenance / ERP "IFS Applications"</h4>
+              <p>When I joined the project, the IFS maintenance software implementation was stalled. I worked closely with the team to address critical issues, and within four months, we successfully launched the project.</p>
+              <p class="date">Aug 2020 - Dec 2020 | Associated with FERREXPO PLC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

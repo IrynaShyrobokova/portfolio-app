@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+.reference-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #BDC3C7; /* Light gray border */
+  box-shadow: 0 4px 8px rgba(44, 62, 80, 0.1); /* Soft navy shadow */
+  background-color: #ECF0F1; /* Lightest blue background */
+  margin-bottom: 20px;
+  border-radius: 8px; /* Rounded corners for modern look */
+}
+
+.left-reference {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.reference-image {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px; /* Limit max size */
+  height: auto;
+  object-fit: cover;
+  border: 5px solid #34495E; /* Darker navy-blue border around image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.reference-info h4 {
+  font-family: 'Cursive', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2C3E50; /* Dark navy-blue for the name */
+  margin: 0;
+}
+
+.reference-info p.position {
+  font-size: 1rem;
+  color: #16A085; /* Medium teal for position text */
+  font-weight: normal;
+}
+
+.reference-text {
+  flex: 1;
+  text-align: left;
+  color: #2C3E50; /* Dark navy text for better readability */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1ABC9C; /* Light teal for section titles */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .reference-item {
+    flex-direction: column; /* Stack the image and text vertically on small screens */
+    text-align: center;
+  }
+
+  .reference-text {
+    text-align: center; /* Center align the text on smaller screens */
+  }
+}

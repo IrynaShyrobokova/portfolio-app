@@ -1,0 +1,85 @@
+/* Carousel container adjustments */
+#referenceCarousel {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  border: none;
+  box-shadow: none;
+  background: transparent; /* Ensure background is transparent */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carousel-inner,
+.carousel-item {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.reference-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: none;
+  box-shadow: none;
+}
+
+.reference-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.reference-info h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1A5276; /* Dark blue */
+}
+
+.reference-info p.position {
+  font-size: 1rem;
+  color: #32CD32; /* Green text for position */
+}
+
+.reference-text {
+  text-align: left;
+  max-width: 60%;
+  word-wrap: break-word;
+  color: #34495E; /* Dark gray-blue for text */
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+.carousel-control-prev {
+  left: -80px;
+}
+
+.carousel-control-next {
+  right: -80px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Inverted to make the arrows white */
+}
+
+/* Hide default indicators */
+.carousel-indicators-custom {
+  display: none;
+}

@@ -1,0 +1,178 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+/* Align navbar items in a single row */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between buttons and menu */
+  align-items: center; /* Vertically center items */
+  padding: 15px 20px;
+  background-color: #1A5276; /* Dark blue background */
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #32CD32; /* Green text for the navbar title */
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-item a {
+  color: #ECF0F1; /* Light gray-blue text */
+  text-decoration: none; /* No underline */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+  .nav-item a:hover {
+    color: #32CD32; /* Green on hover */
+  }
+
+/* Profile Background Section */
+.profile-background {
+  background-image: url('/assets/header-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 400px;
+  background-color: #34495E; /* Fallback for dark blue */
+}
+
+/* Profile Section */
+.profile-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align elements to the left */
+  margin-left: 20px;
+}
+
+/* Profile Image */
+.profile-image img {
+  border-radius: 50%;
+  width: 250px; /* Make the photo larger */
+  height: 250px;
+  border: 5px solid #fff;
+  margin-bottom: 15px;
+}
+
+/* Profile Name and Role */
+.profile-name {
+  font-size: 3rem; /* Make it slightly larger for emphasis */
+  margin: 0;
+  color: #fff; /* White color */
+  font-family: 'Dancing Script', cursive; /* Handwritten font */
+}
+
+  .profile-name:hover {
+    color: #BDC3C7; /* Light gray-blue */
+  }
+
+.profile-role {
+  font-size: 1.2rem;
+  color: #32CD32; /* Green for role */
+  transition: color 0.3s ease;
+}
+
+  .profile-role:hover {
+    color: #BDC3C7; /* Light gray-blue */
+  }
+
+/* Headline Text */
+.headline-text {
+  flex: 2;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Profile Buttons */
+.profile-buttons {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin: 20px 0; /* Space between buttons and other elements */
+}
+
+.btn-primary {
+  background-color: #32CD32; /* Green button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+  .btn-primary:hover {
+    background-color: #28a745; /* Darker green on hover */
+  }
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+  .social-icon:hover {
+    color: #32CD32; /* Green on hover */
+  }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-background {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-section {
+    align-items: center;
+    margin: 0;
+  }
+
+  .profile-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-image img {
+    width: 200px; /* Adjust size for smaller screens */
+    height: 200px;
+  }
+}
