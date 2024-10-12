@@ -66,21 +66,31 @@ p {
   color: #2C3E50; /* Ensure text is dark navy */
 }
 
+/* Align the button container to the right */
+.navbar-buttons {
+  display: flex;
+  justify-content: flex-end; /* Moves the button to the right */
+  gap: 10px; /* Space between buttons */
+}
+
 /* Download CV Button */
 .btn-cv {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #32CD32; /* Green button */
+  color: #fff;
   padding: 10px 20px;
-  font-size: 16px;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
+  /* Change background color on hover */
   .btn-cv:hover {
-    background-color: #0056b3;
+    background-color: #218838; /* Darker green on hover */
   }
 
 .col-35 {
@@ -90,4 +100,22 @@ p {
 
 .col-65 {
   width: 65%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .info-about-wrapper {
+    flex-wrap: wrap; /* Allow sections to stack on small screens */
+  }
+
+  .info-section, .about-section {
+    flex-basis: 100%; /* Make sections full width on small screens */
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+
+  .btn-cv {
+    width: 100%; /* Make the button full width on small screens */
+    text-align: center;
+  }
 }
