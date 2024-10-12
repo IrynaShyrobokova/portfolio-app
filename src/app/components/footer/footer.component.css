@@ -35,12 +35,84 @@
   margin: 0;
 }
 
-.footer .nav-item a {
-  color: white;
-  text-decoration: none;
+.footer .nav-links a {
+  color: #e0e0e0; /* Lighter color for the links */
+  text-decoration: none; /* No underline */
   font-size: 1rem;
 }
 
-  .footer .nav-item a:hover {
+  .footer .nav-links a:hover {
     text-decoration: underline;
   }
+
+  /* Basic styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1A5276; /* Navy background */
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Menu items */
+.main-nav {
+  display: flex;
+  list-style-type: none;
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hide the menu items by default for small screens */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle i {
+  color: white;
+  font-size: 24px;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1A5276;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .main-nav li {
+    margin-right: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+/* Show the menu when the toggle is clicked */
+.nav-active {
+  display: flex;
+}
+

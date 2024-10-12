@@ -16,8 +16,7 @@ body, html {
   /* Title settings for consistency */
   .container h2 {
     font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
+     text-align: center;
     margin: 20px 0;
     margin-bottom: 30px;
     margin-top: 30px;
