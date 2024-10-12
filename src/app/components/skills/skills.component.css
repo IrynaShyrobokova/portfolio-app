@@ -8,8 +8,6 @@
 
   .skills-container h2 {
     margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
     color: #1A5276; /* Dark blue for heading */
   }
 
@@ -47,9 +45,10 @@
 
 /* Common styles for all section titles */
 h2.section-title {
-  font-size: 1.5rem; /* Same as the About section */
-  font-weight: bold; /* Same weight */
-  color: #333; /* Same color */
-  margin-bottom: 20px;
-  text-align: center;
+  font-family: 'Arial', sans-serif; 
+  font-size: 24px; 
+  font-weight: bold;
+  color: #2C3E50; /* Ensure the text color matches the 'About' section */
+  margin-bottom: 15px; /* Add spacing below the heading */
+  text-align: left; /* Align the text to the left */
 }
