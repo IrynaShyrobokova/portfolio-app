@@ -82,7 +82,6 @@ p {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  font-weight: bold;
   display: inline-block;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -95,7 +94,6 @@ p {
 
 .col-35 {
   width: 35%;
-  font-weight: bold;
 }
 
 .col-65 {
