@@ -11,7 +11,7 @@ body {
   justify-content: space-between; /* Space between buttons and menu */
   align-items: center; /* Vertically center items */
   padding: 15px 20px;
-  background-color: #1A5276; /* Dark blue background */
+  background: linear-gradient(to right, #051624, #0e3e5c);
 }
 
 .navbar-buttons {
@@ -46,7 +46,7 @@ body {
 
 /* Profile Background Section */
 .profile-background {
-  background-image: url('/assets/header-bg.png');
+  background-image: url('/assets/BlueGeometricLinkedInBanner.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -75,12 +75,23 @@ body {
   margin-bottom: 15px;
 }
 
+/* Profile Slogan */
+.profile-slogan {
+  position: absolute;
+  top: 220px; 
+  right: 400px; 
+  font-size: 3rem;
+  font-style: italic;
+  color: #ffd700; /* Gold color */
+  text-shadow: 1px 1px 2px #000; /* Adds a subtle shadow */
+}
+
 /* Profile Name and Role */
 .profile-name {
-  font-size: 3rem; /* Make it slightly larger for emphasis */
+  font-size: 3rem; 
   margin: 0;
-  color: #fff; /* White color */
-  font-family: 'Dancing Script', cursive; /* Handwritten font */
+  color: #fff; 
+  font-family: 'Dancing Script', cursive; 
 }
 
   .profile-name:hover {
