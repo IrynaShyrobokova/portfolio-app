@@ -76,14 +76,11 @@ body {
 }
 
 /* Profile Slogan */
-.profile-slogan {
-  position: absolute;
-  top: 220px; 
-  right: 400px; 
-  font-size: 3rem;
-  font-style: italic;
-  color: #ffd700; /* Gold color */
-  text-shadow: 1px 1px 2px #000; /* Adds a subtle shadow */
+.slogan {
+  transform: translate(-50%, -50%);
+  font-size: 2rem; 
+  color: #FFD700; 
+  text-align: center;
 }
 
 /* Profile Name and Role */
@@ -184,5 +181,22 @@ body {
   .profile-image img {
     width: 200px; /* Adjust size for smaller screens */
     height: 200px;
+  }
+
+  .slogan {
+    font-size: 1.2rem; /* Decrease the font size for smaller screens */
+    position: absolute;
+    top: 80%; /* Adjust the top position */
+    left: 50%;
+    transform: translate(-50%, 0); /* No longer center vertically */
+    padding: 5px;
+    width: auto;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  /* Adjust the profile role to give some space */
+  .profile-role {
+    margin-bottom: 30px; /* Add space below the role */
   }
 }
